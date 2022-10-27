@@ -12,6 +12,7 @@
         font-size: 5vw;
         color: white;
         margin: 50px 0;
+        margin-right: 40px;
     }
     
     .heart{
@@ -72,10 +73,11 @@
     font-size:60px;
     font-weight:500;
     line-height:70px;
+    
     }
     
     .animation_text h1 span {
-    color:#56A274
+    color:#56A274;margin-right:50px;
     }
     
     @media(max-width:768px) {
