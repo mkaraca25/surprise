@@ -1,0 +1,85 @@
+*{
+    margin :0;
+    padding : 0;
+    box-sizing : boder-box;
+    background-color: rgb(24, 103, 106);
+    margin-top: 10px;
+    }
+    .head{
+        font-family: "Sofia", sans-serif;
+        text-shadow: 3px 3px 3px #ababab;
+        text-align: center;
+        font-size: 5vw;
+        color: white;
+        margin: 50px 0;
+    }
+    
+    .heart{
+        margin: auto;
+        text-align: center;
+        position: relative;
+        height: 160px;
+        width: 100px;
+        background-color: red;
+        box-shadow: 0 0 20px red;
+        border-radius: 200px 200px 30px 0 ;
+        transform: rotate(45deg);
+        animation: hbeat 1s linear infinite;
+    }
+    .heart::before{
+        background: url('./img/mkaraca.jpg');
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        content: "mkaraca";
+        position: absolute;
+        background-color: red;
+        box-shadow: 0 0 20px red;
+        height: 160px;
+        width: 100px;
+        transform: rotate(-90deg);
+        border-radius: 200px 200px 0px 30px;
+        left: -30px;
+        top: 30px;
+    }
+    @keyframes hbeat {
+        0%{
+            transform: rotate(45deg) scale(1);
+        }
+        20%{
+            transform: rotate(45deg) scale(1);
+        }
+        40%{
+            transform: rotate(45deg) scale(1.4);
+        }
+        60%{
+            transform: rotate(45deg) scale(1.2);
+        }
+        80%{
+            transform: rotate(45deg) scale(1);
+        }
+        100%{
+            transform:rotate(45deg)  scale(1);
+        }
+    }
+    @import "https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap";
+
+    .animation_text h1 {
+    font-family:"Poppins",Sans-serif;
+    text-align:center;
+    color:#373150;
+    font-size:60px;
+    font-weight:500;
+    line-height:70px;
+    }
+    
+    .animation_text h1 span {
+    color:#56A274
+    }
+    
+    @media(max-width:768px) {
+    .animation_text h1 {
+    font-size:30px
+    }
+    } 
